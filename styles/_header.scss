@@ -1,0 +1,130 @@
+@import 'mixins';
+@import 'colors';
+@use 'colors';
+
+
+.header {
+    @include border;
+    background: $dark;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 15px 50px 15px 50px;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+.header__logo img {
+    max-height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    padding: 7px;
+    border: 1.5px solid $white;
+}
+.header h1 {
+    font-family: $logo-font;
+    letter-spacing: 1.5px;
+    color: $brown;
+    font-size: 33px;
+}
+.header a {
+    color: $brown;
+    font-size: 17px;
+}
+.header a:hover {
+    color: $white;
+}
+.header .icons {
+    display: inline-flex;
+    align-items: center;
+}
+.header .icons  .fa-search,
+.header .icons  .fa-shopping-cart,
+.header .icons  .fa-bars {
+    cursor: pointer;
+    color: $brown;
+    margin-right: 20px;
+}
+.header .icons  .fa-search:hover,
+.header .icons  .fa-shopping-cart:hover,
+.header .icons  .fa-bars:hover {    
+    color: $white;
+}
+#menu-btn {
+    display: none;
+}
+.search {
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.8s;
+    margin-right: 10px;
+    border: 1px solid $brown;
+}
+.search:hover .input {
+    width: 170px;
+}
+.search .input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 0px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.8s;
+}
+.header .cart-items-container {
+    position: absolute;
+    top: 100%; right: -100%;
+    height: calc(100vh-200px);
+    width: 350px;
+    background-color: $brown;
+    padding: 20px;
+}
+.header .cart-items-container.active {
+    right: 0;
+}
+.header .cart-items-container .cart-item img {
+    width: 90px;
+    height: 90px;
+    border: 1px solid $white;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+.header .cart-items-container .cart-item {
+    position: relative;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header .cart-items-container a {
+    color: $white;
+}
+.header .cart-items-container h3 {
+    font-weight: 300;
+}
+.header .cart-items-container .cart-item  .fa-xmark {
+    position: relative;
+    right: 0;
+}
+.header .cart-items-container .cart-button {
+    width: 100%;
+    background-color: $white;
+    padding: 6px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.header .cart-items-container .cart-button a {
+    color: $brown;
+}
