@@ -497,6 +497,59 @@ h2 {
   color: #c2937c;
 }
 
+.reviews {
+  margin-top: 40px;
+  padding-top: 30px;
+}
+
+.reviews .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[3];
+      grid-template-columns: repeat(3, 300px);
+  gap: 20px;
+}
+
+.reviews .box-container .box {
+  border: 1.2px solid #2e2e2e;
+  padding: 20px;
+  text-align: center;
+}
+
+.reviews .box-container .box p {
+  font-size: 15px;
+  padding: 10px;
+  line-height: 1.8;
+}
+
+.reviews .box-container .box .user {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reviews .box-container .box h3 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.reviews .box-container .box .stars i {
+  color: #c2937c;
+}
+
+.reviews .box-container .fa-quote-right {
+  font-size: 40px;
+  color: #c2937c;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
