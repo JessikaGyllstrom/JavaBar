@@ -21,6 +21,10 @@
     border: 1.5px solid $white;
     margin-bottom: 15px;
 }
+.menu .box-container .box img:hover {
+    transform: scale(1.1);
+}
+
 .menu .box-container .box .btn {
     @include mybtn;
 }
