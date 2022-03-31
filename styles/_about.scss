@@ -1,0 +1,41 @@
+@use 'mixins';
+.heading {
+    text-align: center;
+    padding-bottom: 30px;
+}
+.about h2 {
+    @include title;
+}
+.about .content h4 {
+    @include title-sm;
+}
+.about .content p {
+    font-weight: 200;
+}
+.heading span {
+    color: $brown;
+    text-transform: uppercase;
+}
+.about {
+    margin-top: 40px;
+    padding-top: 30px;
+}
+.about .content {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 30px;
+    justify-content: center;
+}
+.about .content .btn {
+    margin-top: 20px;
+    @include mybtn;
+}
+.about .row .image {    
+    display: flex;
+    flex-direction: row;
+}
+.about .row .image img {
+    width: 50%;
+}
+
