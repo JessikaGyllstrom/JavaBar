@@ -2,8 +2,9 @@
 .heading {
     text-align: center;
     padding-bottom: 30px;
+    text-transform: uppercase;
 }
-.about h2 {
+h2 {
     @include title;
 }
 .about .content h4 {
@@ -11,6 +12,7 @@
 }
 .about .content p {
     font-weight: 200;
+    width: 85%;
 }
 .heading span {
     color: $brown;
@@ -23,13 +25,17 @@
 .about .content {
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 50%;
     padding: 30px;
     justify-content: center;
+    background-color: $grey;
 }
 .about .content .btn {
     margin-top: 20px;
     @include mybtn;
+}
+.about .content .btn:hover {
+    @include mybtnhover;
 }
 .about .row .image {    
     display: flex;

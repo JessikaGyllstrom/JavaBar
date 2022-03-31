@@ -33,11 +33,16 @@
 }
 
 .header__logo img {
-  max-height: 40px;
+  max-height: 50px;
   margin-right: 10px;
   border-radius: 50%;
   padding: 7px;
-  border: 1.5px solid #f1f0f0;
+  border: 1.9px solid #f1f0f0;
+}
+
+.header__logo img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .header h1 {
@@ -132,7 +137,7 @@
 .header .cart-items-container .cart-item img {
   width: 90px;
   height: 90px;
-  border: 1px solid #f1f0f0;
+  border: 2px solid #f1f0f0;
   border-radius: 50%;
   margin-right: 7px;
 }
@@ -287,18 +292,24 @@
 .home__textbox .btn {
   font-size: 17px;
   background-color: #c2937c;
-  padding: 5px;
+  padding: 8px;
   font-weight: 300;
   min-width: 100px;
+}
+
+.home__textbox .btn:hover {
+  background-color: #f1f0f0;
+  color: #c2937c;
 }
 
 @use 'mixins';
 .heading {
   text-align: center;
   padding-bottom: 30px;
+  text-transform: uppercase;
 }
 
-.about h2 {
+h2 {
   text-transform: uppercase;
   font-size: 35px;
 }
@@ -311,6 +322,7 @@
 
 .about .content p {
   font-weight: 200;
+  width: 85%;
 }
 
 .heading span {
@@ -331,11 +343,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40%;
+  width: 50%;
   padding: 30px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #161616;
 }
 
 .about .content .btn {
@@ -345,6 +358,11 @@
   padding: 8px;
   font-weight: 300;
   min-width: 100px;
+}
+
+.about .content .btn:hover {
+  background-color: #f1f0f0;
+  color: #c2937c;
 }
 
 .about .row .image {
@@ -359,6 +377,62 @@
 
 .about .row .image img {
   width: 50%;
+}
+
+.menu {
+  margin-top: 40px;
+  padding-top: 30px;
+}
+
+.menu .box-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (300px)[3];
+      grid-template-columns: repeat(3, 300px);
+  gap: 20px;
+}
+
+.menu .box-container .box {
+  padding: 20px;
+  text-align: center;
+  border: 1.2px solid #2e2e2e;
+}
+
+.menu .box-container .box img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1.5px solid #f1f0f0;
+  margin-bottom: 15px;
+}
+
+.menu .box-container .box .btn {
+  font-size: 17px;
+  background-color: #c2937c;
+  padding: 8px;
+  font-weight: 300;
+  min-width: 100px;
+}
+
+.menu .box-container .box h3 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.menu .box-container .box .price {
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+.menu .box-container .box .btn:hover {
+  background-color: #f1f0f0;
+  color: #c2937c;
 }
 
 * {
