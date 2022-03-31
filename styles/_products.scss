@@ -20,6 +20,9 @@
     height: 200px;
     margin-bottom: 15px;
 }
+.products .box .image img:hover {
+    transform: scale(1.1);
+}
 .products .box-container .box .stars {
     margin-bottom: 10px;
     color: $brown;
@@ -41,5 +44,17 @@
 .products .box-container .box .stars i {
     color: $brown;
 }
+
+@media (max-width:970px) {
+    .products .box-container {
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+@media (max-width:572px) {
+    .products .box-container {
+        grid-template-columns: repeat(1, 250px);
+    }
+}
+
 
 

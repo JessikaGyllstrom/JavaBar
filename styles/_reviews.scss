@@ -36,5 +36,10 @@
     font-size: 40px;
     color: $brown;
 }
+@media (max-width:768px) {
+    .reviews .box-container {
+        grid-template-columns: repeat(1, 300px);
+    }
+}
 
 

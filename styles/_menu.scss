@@ -42,3 +42,14 @@
 }
 
 
+@media (max-width:970px) {
+    .menu .box-container {
+        grid-template-columns: repeat(2, 250px);
+    }
+}
+@media (max-width:572px) {
+    .menu .box-container {
+        grid-template-columns: repeat(1, 250px);
+    }
+}
+
