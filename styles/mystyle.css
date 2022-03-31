@@ -640,6 +640,75 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.footer {
+  margin-top: 40px;
+  padding-top: 30px;
+  background-color: #161616;
+  text-align: center;
+}
+
+.footer .logo img {
+  max-height: 40px;
+  border-radius: 50%;
+  border: 1px solid #f1f0f0;
+  padding: 6px;
+}
+
+.footer__logo h4 {
+  color: #c2937c;
+}
+
+.footer .share {
+  padding: 10px;
+}
+
+.footer .share a {
+  height: 30px;
+  width: 30px;
+  line-height: 1.8;
+  text-align: center;
+  border-radius: 50%;
+  border: 0.4px solid #f1f0f0;
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.footer .share a:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  gap: 10px;
+  margin-bottom: 15px;
+  color: #c2937c;
+}
+
+.footer .links a {
+  padding: 10px;
+  font-weight: 200;
+  color: #c2937c;
+}
+
+.footer .links a:hover {
+  color: #f1f0f0;
+}
+
+.footer .copyright p {
+  font-weight: 200;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
