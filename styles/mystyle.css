@@ -402,6 +402,7 @@ h2 {
   padding: 20px;
   text-align: center;
   border: 1.2px solid #2e2e2e;
+  background-color: #161616;
 }
 
 .menu .box-container .box img {
@@ -463,6 +464,7 @@ h2 {
   text-align: center;
   border: 1.2px solid #2e2e2e;
   padding: 20px;
+  background-color: #161616;
 }
 
 .products .box .image img {
@@ -548,6 +550,94 @@ h2 {
 .reviews .box-container .fa-quote-right {
   font-size: 40px;
   color: #c2937c;
+}
+
+.contact {
+  margin-top: 40px;
+  padding-top: 30px;
+}
+
+.contact .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .row img {
+  height: 400px;
+  opacity: 50%;
+}
+
+.contact .row form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  text-align: center;
+  min-width: 500px;
+}
+
+.contact .row form h3 {
+  text-transform: uppercase;
+}
+
+.contact .row form .inputBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1.2px solid #2e2e2e;
+}
+
+.contact .row form .inputBox span {
+  color: #c2937c;
+}
+
+.contact .row form .inputBox input {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: none;
+  background: none;
+}
+
+input[type=submit] {
+  font-size: 17px;
+  background-color: #c2937c;
+  padding: 8px;
+  font-weight: 300;
+  min-width: 100px;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #f1f0f0;
+  color: #c2937c;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 * {
