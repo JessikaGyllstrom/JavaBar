@@ -66,6 +66,7 @@
         justify-content: center;
         text-align: center;
         margin-top: 60px;
+
     }
     .home__text  {
         font-size: 10px;
@@ -78,6 +79,12 @@
     .home__text p {
         font-size: 15px;
         width: 100%;
+    }
+
+}
+@media (max-width:670px){
+    .home__textbox {
+        padding-top: 60px;
     }
 
 }

@@ -23,7 +23,7 @@
             <a href="#about">about</a>
             <a href="#menu">menu</a>
             <a href="#products">products</a>
-            <a href="#review">review</a>
+            <a href="#reviews">reviews</a>
             <a href="#contact">contact</a>
         </nav>
         <div class="icons">
@@ -31,45 +31,61 @@
                 <input type="text" name="search" placeholder="Search..." class="input"/>
                 <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
             </div>
-            <div class="fas fa-shopping-cart" id="cart-btn"></div>
-            <div class="fas fa-bars" id="menu-btn"></div>
-        </div>
-        <div class="cart-items-container">
-            <div class="cart-item">
-                <img src="images/cappuccino.jpg" alt="cappuccino">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">$5.99/-</div>
-                </div>
-                <span class="fas fa-times"></span>
+            
+           
+            <div class="fas fa-shopping-cart" id="cart-btn" onclick="myFunction()"></div>
+
+            <div class ="mydiv" id="myDIV">
+                    <div class="cart-item">
+                        <img src="images/cappuccino.jpg" alt="cappuccino">
+                        <div class="content">
+                            <h3>cart item 01</h3>
+                            <div class="price">$5.99/-</div>
+                        </div>
+                        <span class="fas fa-times"></span>
+                    </div>
+                    <div class="cart-item">
+                        <img src="images/icedcoffee.jpg" alt="">
+                        <div class="content">
+                            <h3>cart item 02</h3>
+                            <div class="price">$4.99/-</div>
+                        </div>
+                        <span class="fas fa-times"></span>
+                    </div>
+                    <div class="cart-item">
+                        <img src="images/icedcoffee2.jpg" alt="">
+                        <div class="content">
+                            <h3>cart item 03</h3>
+                            <div class="price">$3.99/-</div>
+                        </div>
+                        <span class="fas fa-times"></span>
+                    </div>
+                    <div class="cart-item">
+                        <img src="images/coffeemilk.jpg" alt="">
+                        <div class="content">
+                            <h3>cart item 04</h3>
+                            <div class="price">$5.99/-</div>
+                        </div>
+                        <span class="fas fa-times"></span>
+                    </div>
+                    <div class="cart-button">
+                        <a href="#" class="btn">checkout now</a>
+                    </div>
+
             </div>
-            <div class="cart-item">
-                <img src="images/icedcoffee.jpg" alt="">
-                <div class="content">
-                    <h3>cart item 02</h3>
-                    <div class="price">$4.99/-</div>
-                </div>
-                <span class="fas fa-times"></span>
-            </div>
-            <div class="cart-item">
-                <img src="images/icedcoffee2.jpg" alt="">
-                <div class="content">
-                    <h3>cart item 03</h3>
-                    <div class="price">$3.99/-</div>
-                </div>
-                <span class="fas fa-times"></span>
-            </div>
-            <div class="cart-item">
-                <img src="images/coffeemilk.jpg" alt="">
-                <div class="content">
-                    <h3>cart item 04</h3>
-                    <div class="price">$5.99/-</div>
-                </div>
-                <span class="fas fa-times"></span>
-            </div>
-            <div class="cart-button">
-                <a href="#" class="btn">checkout now</a>
-            </div>
+
+            <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <nav class="nav">
+                <ul class="navmenu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#menu">menu</a></li>
+                    <li><a href="#products">products</a></li>
+                    <li><a href="#reviews">reviews</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
     <!-- header end -->

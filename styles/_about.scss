@@ -44,9 +44,10 @@ h2 {
 .about .row .image img {
     width: 50%;
 }
-@media (max-width:768px){
+@media (max-width:768px) {
+
     .about .content p {
-        font-size: 15px;
+        font-size: 12px;
         width: 100%;
     }
 }

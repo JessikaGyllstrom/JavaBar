@@ -53,9 +53,25 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
 }
 
+@media (max-width:450px) {
+    .contact .row img {
+        width: 100%;
+    }
+    .contact .row {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .contact .row form {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact .row form .inputBox {
+        min-width: 350px;
+    }
 
+}

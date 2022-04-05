@@ -55,7 +55,6 @@
     margin-right: 20px;
 }
 .header .icons  .fa-search:hover,
-.header .icons  .fa-shopping-cart:hover,
 .header .icons  .fa-bars:hover {    
     color: $white;
 }
@@ -85,78 +84,141 @@
     font-size: 16px;
     transition: 0.8s;
 }
-.header .cart-items-container {
-    position: absolute;
-    top: 100%; right: -100%;
-    height: calc(100vh-200px);
-    width: 350px;
-    background-color: $brown;
-    padding: 20px;
-}
-.header .cart-items-container.active {
-    right: 0;
-}
-.header .cart-items-container .cart-item img {
-    width: 90px;
-    height: 90px;
-    border: 2px solid $white;
-    border-radius: 50%;
-    margin-right: 7px;
-}
-.header .cart-items-container .cart-item {
-    position: relative;
-    margin: 10px 0;
+.mydiv {
+    width: 100%;
+    position: fixed;
     display: flex;
-    align-items: center;
-    gap: 40px;
+    top: 80px;
+    overflow: hidden;
+    max-width: 350px;
+    background-color: $brown;
+    color: $white;
+    display: none;
+    padding: 20px;
+    gap: 15px;
+    right: 10px;
 }
-.header .cart-items-container a {
+.mydiv .cart-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+.mydiv .cart-item h3 {
+    padding-right: 25px;
+}
+.mydiv img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 16px;
+    border: 1px solid $white;
+}
+.nav {
+    width: 100%;
+    position: fixed;
+    top: 110px;
+    background-color: $brown;
+    overflow: hidden;
+    max-height: 400px;
+}
+.navmenu a {
+    display: block;
+    padding: 30px;
     color: $white;
 }
-.header .cart-items-container h3 {
-    font-weight: 300;
-}
-.header .cart-items-container .cart-item  .fa-xmark {
-    position: relative;
-    right: 0;
-}
-.header .cart-items-container .cart-button {
-    width: 100%;
+.navmenu a:hover {
     background-color: $white;
-    padding: 6px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-.header .cart-items-container .cart-button a {
     color: $brown;
 }
+.nav {
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+.hamb {
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+.hamb-line {
+    background: $brown;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+} 
+.hamb-line::before,
+.hamb-line::after {
+    background: $brown;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.hamb-line::before{
+    top: 5px;
+}
+.hamb-line::after{
+    top: -5px;
+}
+.side-menu {
+    display: none;
+} 
+.side-menu:checked ~ nav{
+    max-height: 100%;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+}
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+@media (min-width: 768px) {
+
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+    }
+    .hamb {
+        display: none;
+    }
+}
+
+@media (max-width:1300px) {
+    .mydiv {
+        top: 90px;
+    }
+}
+@media (max-width:769px) {
+    .mydiv {
+        top: 115px;
+    }
+}
+
+
+
 @media (max-width:970px) {
     .search {
         visibility: hidden;
     }
 }
+@media (max-width: 400px) {
 
-@media (max-width:768px){
-
-    #menu-btn{
-        display: inline-block;
+    .header {
+        max-height: 80px;
     }
-    .header .navbar {
-        position: absolute;
-        top:100%; right: -100%;
-        background: $brown;
-        width: 100%;
-        text-align: center;
-    }
-    .header .navbar.active {
-        right:0;
-    }
-    .header .navbar a {
-        color: $white;
-        display: block;
-        margin:1.5rem;
-        padding:5px;
-        font-size: 12px;
+    .home img {
+        min-height: 500px;
     }
 }
+
